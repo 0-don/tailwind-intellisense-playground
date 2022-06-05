@@ -1,25 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html class="h-full w-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      /* ... */
-    </script>
+    <title>KA11I</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./js/scripts.js" defer></script>
     <style type="text/tailwindcss">
-      @layer utilities {
-        .btn-primary {
-          @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
-        }
+      @import url("https://fonts.googleapis.com/css?family=Roboto");
+
+      html {
+        font-family: "Roboto", sans-serif !important;
       }
     </style>
   </head>
-  <body>
-    <!-- hover over class content -->
-    <div class="bg-white absolute w-full h-full flex justify-center items-center">
-      <!-- custom classes & custom sizes -->
-      <button class="btn-primary w-[300px]">Button</button>
+  <body class="h-full w-full bg-black text-white">
+    <div
+      class="container mx-auto h-full items-center md:flex md:justify-center md:space-x-16"
+    >
+      <div class="md:w-6/12">
+        <h1 id="title" class="my-6 text-center text-5xl font-bold">&nbsp;</h1>
+        <img id="imgClickAndChange" src="./images/Crepe4.png" class="w-full" />
+        <div class="mt-1 text-center text-3xl">
+          <p class="mb-2">Bavaria, Germany</p>
+          <a href="https://discord.gg/S22UbR9" target="_blank"
+            ><i class="fab fa-discord"></i
+          ></a>
+          <a href="https://www.instagram.com/_ka11i_" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://open.spotify.com/user/dsknxk9ctggvfqhm4l8nh6xf0?si=7c7d6e42949f4248"
+            target="_blank"
+            ><i class="fab fa-spotify"></i
+          ></a>
+          <a href="https://twitter.com/KA11I_" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+      <div class="flex items-center justify-center md:w-6/12">
+        <p class="text-xl leading-10">
+          Bavaria, Germany ...A student and wannabe video editor & motion
+          graphic designer located in Germany. My main hobbies are video
+          editing, programming, <span class="text-yellow-300">cardistry</span>,
+          playing the piano, and general video games. <br /><br />
+          Check out my
+          <a href="portfolio.html" class="text-yellow-300">portfolio</a> - Send
+          me a <a href="contact.html" class="text-yellow-300">message</a> (no
+          one else does 🙁)
+        </p>
+      </div>
     </div>
   </body>
 </html>

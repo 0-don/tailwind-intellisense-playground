@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>KA11I</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./contact.js" defer></script>
+    <style type="text/tailwindcss">
+      @import url("https://fonts.googleapis.com/css?family=Roboto");
+
+      html {
+        font-family: "Roboto", sans-serif !important;
+      }
+    </style>
+  </head>
+  <body class="h-full w-full bg-black text-white">
+    <a
+      class="absolute top-5 left-5 my-2 text-yellow-300"
+      href="https://ka11i.com/"
+      ><i class="fa-solid fa-house"></i> About Me</a
+    >
+
+    <div class="container mx-auto flex h-full flex-col justify-center">
+      <div class="mx-auto flex flex-col">
+        <h1 id="title" class="my-2 text-4xl"></h1>
+        <form
+          data-netlify="true"
+          action="/contact/success"
+          class="flex h-full w-96 flex-col space-y-5"
+        >
+          <input
+            name="name"
+            type="text"
+            class="border bg-black p-4"
+            placeholder="Name"
+            required
+          />
+          <input
+            name="email"
+            type="email"
+            class="border bg-black p-4"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            name="text"
+            class="border bg-black p-4"
+            placeholder="Comment"
+            required
+          ></textarea>
+          <input
+            type="submit"
+            value="SUBMIT"
+            class="bg-yellow-300 p-4 text-white"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

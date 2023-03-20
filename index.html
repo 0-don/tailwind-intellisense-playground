@@ -7,10 +7,9 @@
     <style type="text/tailwindcss">
       @layer utilities {
         .bg-image {
-          @apply absolute top-1/2 left-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rotate-[30deg] overflow-hidden bg-blue-500 bg-contain 
+          @apply absolute top-1/2 left-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rotate-[30deg] overflow-hidden
           before:absolute before:top-[-10%] before:left-[-60%] before:h-[200%] before:w-[200%] 
-          before:rotate-[-30deg] before:bg-[url('image.jpg')] before:bg-cover 
-          before:bg-left-bottom before:content-[''];
+          before:rotate-[-30deg] before:bg-[url('image.jpg')] before:bg-cover before:bg-left-bottom;
         }
       }
     </style>

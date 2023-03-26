@@ -6,16 +6,55 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
       @layer utilities {
+        body {
+          @apply bg-[#242729];
+        }
+
         .bg-image {
           @apply absolute top-1/2 left-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rotate-[30deg] overflow-hidden
           before:absolute before:top-[-10%] before:left-[-60%] before:h-[200%] before:w-[200%] 
           before:rotate-[-30deg] before:bg-[url('image.jpg')] before:bg-cover before:bg-left-bottom;
+        }
+
+        ::-webkit-scrollbar {
+          @apply h-[2px] w-[2px];
+        }
+        ::-webkit-scrollbar-button {
+          @apply h-0 w-0;
+        }
+        ::-webkit-scrollbar-thumb {
+          @apply bg-gradient-to-t from-transparent via-red-600 to-transparent;
+        }
+        ::-webkit-scrollbar-thumb:horizontal {
+          @apply bg-gradient-to-l from-transparent via-red-600 to-transparent;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          @apply bg-transparent;
+        }
+        ::-webkit-scrollbar-thumb:active {
+          @apply bg-transparent;
+        }
+        ::-webkit-scrollbar-track {
+          @apply bg-transparent;
+        }
+        ::-webkit-scrollbar-track:hover {
+          @apply bg-transparent;
+        }
+        ::-webkit-scrollbar-track:active {
+          @apply bg-transparent;
+        }
+        ::-webkit-scrollbar-corner {
+          @apply bg-transparent;
         }
       }
     </style>
   </head>
   <body>
     <!-- hover over class content -->
+    <div class="relative h-[100vh]">
+      <div class="bg-image"></div>
+    </div>
+
     <div class="relative h-[100vh]">
       <div class="bg-image"></div>
     </div>

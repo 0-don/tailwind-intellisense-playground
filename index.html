@@ -7,7 +7,7 @@
     <style type="text/tailwindcss">
       @layer utilities {
         body {
-          @apply bg-[#242729];
+          @apply bg-[white];
         }
 
         .bg-image {
@@ -52,14 +52,9 @@
   <body>
     <!-- hover over class content -->
     <div class="flex h-screen items-center justify-center">
-      <div class="relative h-96 w-96 bg-[url('image.jpg')]">
-        <div
-          class="absolute bottom-0 left-0 right-0 h-5 w-[90%] bg-white"
-        ></div>
-        <div
-          class="absolute top-0 right-0 h-[100%] w-5 -translate-x-1/2 -translate-y-1/2 transform bg-white"
-        ></div>
-      </div>
+      <div
+        class="relative h-96 w-96 bg-[url('image.jpg')] before:absolute before:bottom-0 before:left-0 before:right-0 before:h-5 before:w-[90%] before:bg-white after:absolute after:bottom-0 after:right-0 after:h-[10%] after:w-10 after:border-t-[1.25rem] after:border-l-[1.25rem] after:border-white"
+      ></div>
     </div>
 
     <div class="relative h-[100vh]">
